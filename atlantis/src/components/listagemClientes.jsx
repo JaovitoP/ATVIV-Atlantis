@@ -1,8 +1,8 @@
 import React from 'react';
-function Clientes(){
+function ListagemClientes(){
     return(
-        <div>
-            <h1 className='has-text-black'>Listagem de Clientes</h1>
+        <div className='p-6'>
+            <h1 className='has-text-black has-text-centered '>Listagem de Clientes</h1>
             <p>CLiente 1</p>
             <p>CLiente 2</p>
             <p>CLiente 3</p>
@@ -12,4 +12,4 @@ function Clientes(){
         </div>
     )
 }
-export default Clientes;
+export default ListagemClientes;
