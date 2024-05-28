@@ -3,8 +3,10 @@ import  './acomodacoes.css';
 function Acomodacoes(){
     return(
         <div className='is-flex is-justify-content-center'>
+            <div className='buttons pt-1'>
+                <button className='button is-primary is-clickable '>Cadastrar Acomodações</button>
+                <button className='button is-danger is-clickable'>Excluir Acomodações</button>
             <h2 className='has-text-black'></h2>
-
             <table>
                 <tr>
                     <th>Nome</th>
@@ -62,7 +64,8 @@ function Acomodacoes(){
                     <td>2</td>
                     <td>2</td>
                 </tr>
-</table>
+        </table>
+        </div>
         </div>
     )
 }
