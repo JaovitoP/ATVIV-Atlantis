@@ -7,15 +7,15 @@ function Acomodacoes(){
 
             <table>
                 <tr>
-                    <th></th>
-                    <th>Leitos para solteiros</th>
-                    <th>Leitos para casais</th>
+                    <th>Nome</th>
+                    <th>Cama Solteiro</th>
+                    <th>Cama Casal</th>
+                    <th>Suíte</th>
                     <th>Climatização</th>
-                    <th>Garagens</th>
-                    <th>Suites</th>
+                    <th>Garagem</th>
                 </tr>
                 <tr>
-                    <td>Acomodação simples para solteiro(a)</td>
+                    <td>Casal Simples</td>
                     <td>1</td>
                     <td>2</td>
                     <td>2</td>
@@ -23,44 +23,44 @@ function Acomodacoes(){
                     <td>2</td>
                 </tr>
                 <tr>
-                    <td>Acomodação simples para solteiro(a)</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
-                    <td>Mexico</td>
-                    <td>Mexico</td>
-                    <td>Mexico</td>
+                    <td>Família Simples</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
                 </tr>
                 <tr>
-                    <td>Acomodação simples para solteiro(a)</td>
-                    <td>Roland Mendel</td>
-                    <td>Austria</td>
-                    <td>Austria</td>
-                    <td>Austria</td>
-                    <td>Austria</td>
+                    <td>Família Mais</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
                 </tr>
                 <tr>
-                    <td>Acomodação simples para solteiro(a)</td>
-                    <td>Helen Bennett</td>
-                    <td>UK</td>
-                    <td>UK</td>
-                    <td>UK</td>
-                    <td>UK</td>
+                    <td>Família Super</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
                 </tr>
                 <tr>
-                    <td>Acomodação simples para solteiro(a)</td>
-                    <td>Yoshi Tannamuri</td>
-                    <td>Canada</td>
-                    <td>Canada</td>
-                    <td>Canada</td>
-                    <td>Canada</td>
+                    <td>Solteiro Simples</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
                 </tr>
                 <tr>
-                    <td>Acomodação simples para solteiro(a)</td>
-                    <td>Giovanni Rovelli</td>
-                    <td>Italy</td>
-                    <td>Italy</td>
-                    <td>Italy</td>
-                    <td>Italy</td>
+                    <td>Solteiro Mais</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
                 </tr>
 </table>
         </div>
