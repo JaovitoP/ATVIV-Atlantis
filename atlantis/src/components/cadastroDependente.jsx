@@ -6,6 +6,8 @@ function CadastroDependente(){
             <div className='columns'>
                 <div className='column p-6'>
                     <h2 className='has-text-centered'>Dados Pessoais</h2>
+                    <label>CPF Do Dependente</label>
+                    <input class="input" type="text" placeholder="CPF" />
                     <label>Nome Completo</label>
                     <input class="input" type="text" placeholder="Nome Completo" />
                     <label>Nome Social</label>

@@ -4,8 +4,6 @@ function Acomodacoes(){
     return(
         <div className='is-flex is-justify-content-center'>
             <div className='buttons pt-1'>
-                <button className='button is-primary is-clickable '>Cadastrar Acomodações</button>
-                <button className='button is-danger is-clickable'>Excluir Acomodações</button>
             <h2 className='has-text-black'></h2>
             <table>
                 <tr>

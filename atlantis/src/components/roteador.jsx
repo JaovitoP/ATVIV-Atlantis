@@ -5,80 +5,81 @@ import Hospedagem from "./hospedagem";
 import Acomodacoes from "./acomodacoes";
 import CadastroCliente from "./cadastroCliente";
 import CadastroDependente from "./cadastroDependente";
+import CadastroHospedagem from "./cadastroHospedagem";
 import ListagemClientes from "./listagemClientes";
 import Menu from "./menu";
 
-export default function Roteador(){
-    const [tela, setTela] = useState('listagemClientes')
+export default function Roteador() {
+    const [tela, setTela] = useState('Clientes');
+
     const selecionarView = (valor, e) => {
-        e.preventDefault()
-        setTela(valor)
+        e.preventDefault();
+        setTela(valor);
         console.log(valor);
-        
-    }
-    const botoes = ['Home', 'Clientes', 'Hospedagem', 'Acomodações', 'CadastroCliente', 'CadastroDependente', 'listagemClientes'];
+    };
+
+    const botoes = ['Home', 'Clientes', 'Hospedagem', 'Acomodações', 'CadastroCliente', 'CadastroDependente', 'listagemClientes', 'CadastroHospedagem'];
+
     const construirView = () => {
-        if (tela === 'CadastroCliente') {
-            return (
-                <>
-                    <Menu seletorView={selecionarView} botoes={botoes} />
-                    <CadastroCliente setTela={setTela}/>
-                </>
-            )
-        } else if (tela == 'Clientes') {
-            return (
-                <>
-                    <Menu seletorView={selecionarView} botoes={botoes} />
-                    <Clientes setTela={setTela}/>
-                </>
-            )
-        } else if (tela == 'Hospedagem') {
-            return (
-                <>
-                    <Menu seletorView={selecionarView} botoes={botoes} />
-                    <Hospedagem setTela={setTela}/>
-                </>
-            )
-        } else if (tela == 'CadastroCliente') {
-            return (
-                <>
-                    <Menu seletorView={selecionarView} botoes={botoes} />
-                    <CadastroCliente setTela={setTela}/>
-                </>
-            )
-        } else if (tela == 'CadastroDependente') {
-            return (
-                <>
-                    <Menu seletorView={selecionarView} botoes={botoes} />
-                    <CadastroDependente setTela={setTela}/>
-                </>
-            )
-        } else if (tela == 'listagemClientes') {
-            return (
-                <>
-                    <Menu seletorView={selecionarView} botoes={botoes} />
-                    <ListagemClientes setTela={setTela}/>
-                </>
-            )
-        } else if (tela == 'Home') {
-            return (
-                <>
-                    <Menu seletorView={selecionarView} botoes={botoes} />
-                    <Home setTela={setTela}/>
-                </>
-            )
-        } else {
-            return (
-                <>
-                    <Menu seletorView={selecionarView} botoes={botoes} />
-                    <Acomodacoes setTela={setTela}/>
-                </>
-            )
+        switch (tela) {
+            case 'CadastroCliente':
+                return (
+                    <>
+                        <Menu seletorView={selecionarView} botoes={botoes} />
+                        <CadastroCliente setTela={setTela} />
+                    </>
+                );
+            case 'Clientes':
+                return (
+                    <>
+                        <Menu seletorView={selecionarView} botoes={botoes} />
+                        <Clientes seletorView={selecionarView} />
+                    </>
+                );
+            case 'Hospedagem':
+                return (
+                    <>
+                        <Menu seletorView={selecionarView} botoes={botoes} />
+                        <Hospedagem setTela={setTela} />
+                    </>
+                );
+            case 'CadastroDependente':
+                return (
+                    <>
+                        <Menu seletorView={selecionarView} botoes={botoes} />
+                        <CadastroDependente setTela={setTela} />
+                    </>
+                );
+                case 'CadastroHospedagem':
+                    return (
+                        <>
+                            <Menu seletorView={selecionarView} botoes={botoes} />
+                            <CadastroHospedagem setTela={setTela} />
+                        </>
+                    );
+            case 'listagemClientes':
+                return (
+                    <>
+                        <Menu seletorView={selecionarView} botoes={botoes} />
+                        <ListagemClientes setTela={setTela} />
+                    </>
+                );
+            case 'Home':
+                return (
+                    <>
+                        <Menu seletorView={selecionarView} botoes={botoes} />
+                        <Home setTela={setTela} />
+                    </>
+                );
+            default:
+                return (
+                    <>
+                        <Menu seletorView={selecionarView} botoes={botoes} />
+                        <Acomodacoes setTela={setTela} />
+                    </>
+                );
         }
+    };
 
-    }
-
-    return (
-        construirView()
-    )
+    return construirView();
 }
