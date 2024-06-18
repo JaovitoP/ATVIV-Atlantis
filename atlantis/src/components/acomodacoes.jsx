@@ -16,51 +16,51 @@ function Acomodacoes(){
                 </tr>
                 <tr>
                     <td>Casal Simples</td>
+                    <td>0</td>
                     <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
+                    <td>1</td>
+                    <td>Sim</td>
+                    <td>1</td>
                 </tr>
                 <tr>
                     <td>Família Simples</td>
+                    <td>2</td>
                     <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
+                    <td>1</td>
+                    <td>Sim</td>
+                    <td>1</td>
                 </tr>
                 <tr>
                     <td>Família Mais</td>
+                    <td>5</td>
                     <td>1</td>
                     <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
+                    <td>Sim</td>
                     <td>2</td>
                 </tr>
                 <tr>
                     <td>Família Super</td>
-                    <td>1</td>
+                    <td>6</td>
                     <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
+                    <td>3</td>
+                    <td>Sim</td>
                     <td>2</td>
                 </tr>
                 <tr>
                     <td>Solteiro Simples</td>
                     <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>Sim</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <td>Solteiro Mais</td>
+                    <td>0</td>
                     <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
+                    <td>1</td>
+                    <td>Sim</td>
+                    <td>1</td>
                 </tr>
         </table>
         </div>

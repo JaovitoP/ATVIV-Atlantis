@@ -6,7 +6,6 @@ import Acomodacoes from "./acomodacoes";
 import CadastroCliente from "./cadastroCliente";
 import CadastroDependente from "./cadastroDependente";
 import CadastroHospedagem from "./cadastroHospedagem";
-import ListagemClientes from "./listagemClientes";
 import Menu from "./menu";
 
 export default function Roteador() {
@@ -36,6 +35,13 @@ export default function Roteador() {
                         <Clientes seletorView={selecionarView} />
                     </>
                 );
+                case 'CadastroHospedagem':
+                    return (
+                        <>
+                            <Menu seletorView={selecionarView} botoes={botoes} />
+                            <CadastroHospedagem setTela={setTela} />
+                        </>
+                        );
             case 'Hospedagem':
                 return (
                     <>
@@ -50,20 +56,7 @@ export default function Roteador() {
                         <CadastroDependente setTela={setTela} />
                     </>
                 );
-                case 'CadastroHospedagem':
-                    return (
-                        <>
-                            <Menu seletorView={selecionarView} botoes={botoes} />
-                            <CadastroHospedagem setTela={setTela} />
-                        </>
-                    );
-            case 'listagemClientes':
-                return (
-                    <>
-                        <Menu seletorView={selecionarView} botoes={botoes} />
-                        <ListagemClientes setTela={setTela} />
-                    </>
-                );
+
             case 'Home':
                 return (
                     <>

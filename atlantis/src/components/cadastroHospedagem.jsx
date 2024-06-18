@@ -2,7 +2,7 @@ import React from 'react';
 function CadastroHospedagem(){
     return(
         <div className='container has-background-link-light'>
-            <h1 className='has-text-black has-text-centered'>Cadastro de Clientes</h1>
+            <h1 className='has-text-black has-text-centered'>Cadastro de Hospedagem</h1>
             <div className='columns'>
                 <div className='column p-6'>
                     <h2 className='has-text-centered'>Dados Pessoais</h2>
